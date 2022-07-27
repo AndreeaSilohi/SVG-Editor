@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>SVG Editor Silohi Andreea</title>
+<head>
+	<link rel="stylesheet" href="6_1092_SILOHI_ANDREEA_MADALINA.css">
+</head>
+<body>
+
+<div id="box">
+  <label for="colorPickerS">Stroke-Color</label>
+  <input type="color" id="colorPickerS">
+ </div>
+ <div id="box">
+  <label for="colorPicker">Figure color</label>
+  <input type="color" id="colorPicker">
+  </div>
+  
+ <div id="box">
+ <label for="png-container">Culoare fundal</label>
+ <input type="color" id="clr">
+</div>
+
+
+ <span id="tools">
+<input id="title" value="Untitled" style="width:10%"></input>
+
+<p>
+  <label for="coordX1">X1:</label>
+  <input class="coordonate" type="text" value =24 id="coordX1"  />
+  <label for="coordY1">Y1:</label>
+  <input class="coordonate" type="text" value =89 id="coordY1"/>
+   <label for="coordX2">X2:</label>
+  <input class="coordonate" type="text" value=90 id="coordX2"  />
+  <label for="coordY2">Y2:</label>
+  <input class="coordonate" type="text" value=67 id="coordY2"/>
+</p>
+
+<div id="box">
+ <label for="myRange">Stroke</label>
+  <input type="range" min="1" max="100" value="50" id="myRange">
+  </div>
+</p>
+
+
+
+<div>
+<p id="demo"></p></div>
+<button id="btnLoad">Load</button>
+<button id="btnSave">Save SVG</button>
+<button id="btnClear">Clear</button>
+<button id="click">Undo</button>
+<button id="downloadPNG">Download PNG</button>
+<button id="btn1">Schimbare coordonate </button>
+
+<div>
+<button id="btnDreptunghi">Rectangle</button>
+<button id="btnElipsa">Elipsa</button>
+<button id="btnLinie">Linie</button>
+</div>
+
+
+			
+
+
+<canvas id="canvas">
+</canvas>
+</span>
+<svg id="editor">
+<svg id="elemente"></svg>
+<rect id="createRectangle" width="0" height="0" style="display:none;"></rect>
+<line id="createLine" x1="0" y1="0" x2="0" y2="0" style="display:none;" />
+<ellipse id ="createEllipse" width="0" height="0"  style="display:none;" />
+<textarea id="textarea" spellcheck="false"></textarea>
+</svg>
+       
+		<script src="ClasaEditorCodEditorSVG_1092_Silohi_Andreea.js"></script>
+		<script src="ClasaSelectorCodEditorSVG_1092_Silohi_Andreea.js"></script>
+		<script src="ClasaSourceCodEditorSVG_1092_Silohi_Andreea.js"></script>
+		<script src="6_1092_SILOHI_ANDREEA_MADALINA.js"></script>
+	</body>
+</html>
